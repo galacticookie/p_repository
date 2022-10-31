@@ -1,0 +1,239 @@
+\documentclass[12pt,fleqn]{book}
+
+\input{structure}
+
+\begin{document}
+
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\coordinate [below=12cm] (midpoint) at (current page.north);
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{background}};
+\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Notas de aula\\[15pt]
+{\Large Uma miscelânia de aulas de Literatura}\\[20pt]}};
+\end{tikzpicture}};
+\end{tikzpicture}
+\vfill
+\endgroup
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent Documento elaborado por meio do software \LaTeX, com a distribuição \TeX Live. O código-fonte para análise e compilação pode ser encontrado no repositório público \url{https://github.com}.
+
+\bigskip
+
+\noindent \textit{Primeira edição, outubro de 2022}
+
+%----------------------------------------------------------------------------------------
+%	REFERÊNCIA
+%----------------------------------------------------------------------------------------
+
+\chapter*{Referência}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Referência}}
+
+\begin{enumerate}
+\item Conteúdos anteriores ao Humanismo.
+\item \textit{Divina comédia}. Procurar anotações nos cadernos.
+\item \textit{Os sermões}. Procurar anotações no OneDrive.
+\item \textit{Auto da barca do inferno}. Procurar anotações nos cadernos (uma das partes estava no caderno de História).
+\item As vertentes dos sonetos de Camões. Procurar anotações nos cadernos (parte das notas sobre o Maneirismo estava no caderno de Geografia).
+\item A arte barroca no Brasil. Procurar anotações nos cadernos.
+\item \textit{Cartas chilenas}. (?)
+\item \textit{O Uruguai}. (?)
+\item \textit{Frankenstein}. Procurar anotações no OneDrive.
+\end{enumerate}
+
+% INCLUIR LISTA DE FIGURAS
+
+%----------------------------------------------------------------------------------------
+%	CONTEÚDO
+%----------------------------------------------------------------------------------------
+
+\chapterimage{chapter_head_1.pdf}
+
+\pagestyle{empty}
+
+\tableofcontents
+
+\cleardoublepage
+
+\pagestyle{fancy}
+
+\setcounter{chapter}{-1}
+
+%----------------------------------------------------------------------------------------
+%	CAPÍTULO 0
+%----------------------------------------------------------------------------------------
+
+\include{./TeX_files/cap00}
+
+%----------------------------------------------------------------------------------------
+%	PARTE 1 (HUMANISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Humanismo}
+
+\include{./TeX_files/cap01} % CAPÍTULO 1 (INTRODUÇÃO)
+
+\include{./TeX_files/cap1} % CAPÍTULO 1.1 (DANTE ALIGHIERI)
+
+\include{./TeX_files/cap02} % CAPÍTULO 2 (HUMANISMO EM PORTUGAL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 2 (CLASSICISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Classicismo}
+
+\include{./TeX_files/cap03} % CAPÍTULO 3 (INTRODUÇÃO)
+
+\include{./TeX_files/cap04} % CAPÍTULO 4 (CLASSICISMO EM PORTUGAL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 3 (BARROCO)
+%----------------------------------------------------------------------------------------
+
+\part{Barroco}
+
+\include{./TeX_files/cap05} % CAPÍTULO 5 (INTRODUÇÃO)
+
+\include{./TeX_files/cap06} % CAPÍTULO 6 (BARROCO NO BRASIL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 4 (NEOCLASSICISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Neoclassicismo}
+
+\include{./TeX_files/cap07} % CAPÍTULO 7 (INTRODUÇÃO)
+
+\include{./TeX_files/cap08} % CAPÍTULO 8 (ARCADISMO EM PORTUGAL)
+
+\include{./TeX_files/cap09} % CAPÍTULO 9 (ARCADISMO NO BRASIL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 5 (ROMANTISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Romantismo}
+
+\include{./TeX_files/cap10} % CAPÍTULO 10 (INTRODUÇÃO)
+
+\include{./TeX_files/cap11} % CAPÍTULO 10 (ROMANTISMO EM PORTUGAL)
+
+\include{./TeX_files/cap12} % CAPÍTULO 12 (ROMANTISMO NO BRASIL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 6 (REALISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Realismo}
+
+\include{./TeX_files/cap13} % CAPÍTULO 13 (INTRODUÇÃO)
+
+\include{./TeX_files/cap14} % CAPÍTULO 14 (REALISMO EM PORTUGAL)
+
+\include{./TeX_files/cap15} % CAPÍTULO 15 (REALISMO NO BRASIL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 7 (MACHADO DE ASSIS)
+%----------------------------------------------------------------------------------------
+
+\part{Machado de Assis}
+
+\include{./TeX_files/cap16} % CAPÍTULO 16 (INTRODUÇÃO)
+
+\include{./TeX_files/cap17} % CAPÍTULO 17 (BONS DIAS!)
+
+\include{./TeX_files/cap18} % CAPÍTULO 18 (MEMÓRIAS PÓSTUMAS DE BRÁS CUBAS)
+
+\include{./TeX_files/cap19} % CAPÍTULO 19 (QUINCAS BORBA)
+
+\include{./TeX_files/cap20} % CAPÍTULO 20 (DOM CASMURRO)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 8 (NATURALISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Naturalismo}
+
+\include{./TeX_files/cap21} % CAPÍTULO 21 (INTRODUÇÃO)
+
+\include{./TeX_files/cap22} % CAPÍTULO 22 (NATURALISMO NO BRASIL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 9 (PARNASIANISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Parnasianismo}
+
+\include{./TeX_files/cap23} % CAPÍTULO 23 (INTRODUÇÃO)
+
+\include{./TeX_files/cap24} % CAPÍTULO 24 (PARNASIANISMO NO BRASIL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 10 (SIMBOLISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Simbolismo}
+
+\include{./TeX_files/cap25} % CAPÍTULO 25 (INTRODUÇÃO)
+
+\include{.TeX_files/cap26} % CAPÍTULO 26 (SIMBOLISMO EM PORTUGAL)
+
+\include{./TeX_files/cap27} % CAPÍTULO 27 (SIMBOLISMO NO BRASIL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 11 (MODERNISMO)
+%----------------------------------------------------------------------------------------
+
+\part{Modernismo}
+
+\include{./TeX_files/cap28} % CAPÍTULO 28 (INTRODUÇÃO)
+
+\include{./TeX_files/cap29} % CAPÍTULO 29 (MODERNISMO NO BRASIL)
+
+\include{./TeX_files/cap30} % CAPÍTULO 30 (MODERNISMO EM PORTUGAL)
+
+%----------------------------------------------------------------------------------------
+%	PARTE 12 (ANÁLISE DE OBRAS)
+%----------------------------------------------------------------------------------------
+
+\part{Análise de obras}
+
+\include{./TeX_files/cap31} % CAPÍTULO 31 (RACIONAIS MC'S)
+
+%----------------------------------------------------------------------------------------
+%	CADERNO DE IMAGENS
+%----------------------------------------------------------------------------------------
+
+\include{./TeX_files/cad_imagens} % CADERNO DE IMAGENS
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAFIA
+%----------------------------------------------------------------------------------------
+
+\chapter*{Bibliografia}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliografia}}
+\section*{Livros}
+\addcontentsline{toc}{section}{Books}
+\printbibliography[heading=bibempty,type=book]
+\section*{Artigos}
+\addcontentsline{toc}{section}{Articles}
+\printbibliography[heading=bibempty,type=article]
+
+%----------------------------------------------------------------------------------------
+%	ÍNDICE
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Índice}}
+\printindex
+
+\end{document}
